@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    .red_rectangle{
+      background-color: red;
+      height: 150px; width: 500px;
+      position: relative;
+    }
+
+    .rechteck_oben{
+      background-color: red;
+      height: 100px; width: 200px;
+      position: absolute;
+      z-index: 10;
+      top: 130px; left: 158px;
+      border-style: solid;
+    }
+    
+    .raute_1{
+      background-color: aliceblue;
+      position: absolute;
+      width: 60px; height: 60px;
+      transform: rotate(45deg) skew(10deg, 10deg);
+      left: 136px; top: 71px;
+      z-index: -1;
+    }
+    .raute_2{
+      background-color: aliceblue;
+      position: absolute;
+      width: 60px; height: 60px;
+      transform: rotate(45deg) skew(10deg, 10deg);
+      left: 68px; top: 71px;
+    }
+    .raute_3{
+      background-color: aliceblue;
+      position: absolute;
+      width: 60px; height: 60px;
+      transform: rotate(45deg) skew(10deg, 10deg);
+      left: 4px; top: 71px;
+    }
+    .white_rectangle{
+      background-color: aliceblue;
+      height: 150px; width: 500px;
+      position: absolute;
+      top: 150px;
+    }
+    .halbkreis{
+      background-color:aliceblue;
+      height: 100px; width: 200px;
+      border-radius: 200px 200px 0 0;
+      position: absolute;
+      z-index: 10;
+      transform: rotate(180deg);
+      left: 150px;
+      border-style: solid;
+      border-bottom-style: none;
+    }
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <h1>The Franconian Flag</h1>
+
+<div class="rechteck_oben">
+  
+</div>
+    <div class="red_rectangle">
+      <div class="white_rectangle">
+        <div class="halbkreis">
+          <div class="raute_1"></div>
+          <div class="raute_2"></div>
+          <div class="raute_3"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
